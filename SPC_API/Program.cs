@@ -4,7 +4,7 @@ using SPC_API.Model;
 
 
 var builder = WebApplication.CreateBuilder(args);
-var connection = "Data Source=DESKTOP-9N2N8IQ;Initial Catalog=SPCDB_ICBT;Integrated Security=True;Trust Server Certificate=True";
+var connection = "";
 builder.Services.AddDbContext<AppDBContext>(options => options.UseSqlServer(connection));
 
 // Add services to the container.
