@@ -45,7 +45,7 @@ namespace SPC_API.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connection = "Data Source=DESKTOP-9N2N8IQ;Initial Catalog=SPCDB_ICBT;Integrated Security=True;Trust Server Certificate=True";
+            var connection = "";
             optionsBuilder.UseSqlServer(connection);
         }
     }
